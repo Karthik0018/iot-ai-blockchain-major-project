@@ -1,0 +1,33 @@
+{
+    "num_devices": 3,
+    "update_interval_sec": 2,
+    "normal_ranges": {
+        "temperature": {
+            "min": 18,
+            "max": 30
+        },
+        "humidity": {
+            "min": 40,
+            "max": 80
+        }
+    },
+    "anomaly_settings": {
+        "probability": 0.1,
+        "temperature_range": {
+            "min": 50,
+            "max": 100
+        }
+    },
+    "day_night_cycle": {
+        "enabled": true,
+        "day_temp_offset": 5,
+        "night_temp_offset": -3,
+        "day_humidity_offset": -10,
+        "night_humidity_offset": 10,
+        "cycle_minutes": 10
+    },
+    "blockchain_settings": {
+        "min_anomaly_threshold": 3,
+        "significant_change_threshold": 1.5
+    }
+}
